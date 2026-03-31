@@ -2,66 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PillShare</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PillShare</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
 
-<header>
+<header class="glass">
   <h1>PillShare</h1>
   <nav>
-    <a href="#problem">Problem</a>
-    <a href="#solution">Solution</a>
-    <a href="#impact">Impact</a>
-    <a href="#contact">Join</a>
+    <a href="#about">About</a>
+    <a href="#how">How</a>
+    <a href="#donate">Donate</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-  <div class="overlay"></div>
   <div class="hero-content">
-    <h1>Don’t let medicines expire.<br>Let them save lives.</h1>
-    <p>Millions suffer while usable medicines are wasted every day.</p>
-    <div class="buttons">
-      <button>Donate Medicines</button>
-      <button class="secondary">Request Help</button>
-    </div>
+    <h2>Don’t Waste Medicines.<br>Save Lives.</h2>
+    <p>Redistributing unused medicines to people who need them.</p>
+    <button onclick="scrollToDonate()">Donate Now</button>
   </div>
 </section>
 
-<section id="problem" class="section">
-  <h2>The Problem</h2>
-  <div class="stats">
-    <div><h1>40%</h1><p>Medicines go unused in households</p></div>
-    <div><h1>50%</h1><p>Improperly used globally</p></div>
-    <div><h1>₹1000Cr+</h1><p>Wasted annually</p></div>
+<section id="about" class="section">
+  <h2>About PillShare</h2>
+  <p>We bridge the gap between surplus medicines and people in need.</p>
+</section>
+
+<section id="how" class="section">
+  <h2>How It Works</h2>
+  <div class="grid">
+    <div class="card">Donate Medicines</div>
+    <div class="card">We Verify</div>
+    <div class="card">We Deliver</div>
   </div>
 </section>
 
-<section class="image-break">
-  <div class="overlay"></div>
-  <h2>Waste on one side. Need on the other.</h2>
-</section>
-
-<section id="solution" class="section">
-  <h2>Our Solution</h2>
-  <div class="cards">
-    <div class="card"><h3>Donate</h3><p>Give unused medicines safely</p></div>
-    <div class="card"><h3>Verify</h3><p>Strict checks</p></div>
-    <div class="card"><h3>Deliver</h3><p>Reach those in need</p></div>
-  </div>
-</section>
-
-<section id="impact" class="section">
-  <h2>Our Vision</h2>
-  <p>A world where no medicine is wasted.</p>
+<section id="donate" class="section highlight">
+  <h2>Make an Impact</h2>
+  <button class="big-btn">Start Donating</button>
 </section>
 
 <section id="contact" class="section">
-  <h2>Join the Movement</h2>
-  <button class="big">Start Donating</button>
+  <h2>Contact</h2>
+  <input placeholder="Name">
+  <input placeholder="Email">
+  <textarea placeholder="Message"></textarea>
+  <button>Send</button>
 </section>
 
 <footer>
